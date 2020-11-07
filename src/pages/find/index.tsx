@@ -3,7 +3,7 @@ import { View, Button } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 
 import styles from './index.module.scss'
-import wordsList from '@/constants/words.json'
+import wordsList from '@/constants/words'
 
 const langArr = [{
   key: 'en',

@@ -1,4 +1,4 @@
-[
+const words =  [
   {
     "en": "risk",
     "zh": "风险",
@@ -53,5 +53,10 @@
     "en": "crunch",
     "zh": "困境, 短缺",
     "ipa": "[krʌntʃ]"
+  },
+  {
+    
   }
 ]
+
+export default words
