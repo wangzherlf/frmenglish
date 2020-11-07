@@ -1,0 +1,94 @@
+.box {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .tags {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 300px;
+    .tag {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      background: #fff;
+      color: #FF6A00;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border: 1px solid #FF6A00;
+      &.active {
+        background: linear-gradient(90deg, #FF9C00 0%, #FF6A00 100%);
+        color: #fff;
+      }
+      &:first-child {
+        border-right: 0;
+        border-radius: 10px 0 0 10px;
+      }
+      &:last-child {
+        border-left: 0;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    .title {
+      font-size: 70px;
+      color: #FF9700;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    .ipa {
+      color: #FF9700;
+      margin-bottom: 20px;
+    }
+    .zh {
+      color: #FF9700;
+      font-size: 40px;
+    }
+  }
+  .footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px 30px;
+    border-top: 1px solid #efefef;
+    box-sizing: border-box;
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      height: 96px;
+      border-radius: 52px;
+      &.next {
+        background: linear-gradient(90deg, #FF9C00 0%, #FF6A00 100%);
+      }
+      &.prev {
+        background: linear-gradient(90deg, #4DAEFF 0%, #4DAEFF 100%);
+      }
+    }
+  }
+}
